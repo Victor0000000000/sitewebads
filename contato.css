@@ -1,8 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Caveat', sans-serif;
     margin: 0;
-    background-color: #fff8f0;
+    background-color: black;
 }
 
 header {
@@ -36,12 +40,18 @@ main {
 }
 
 section {
+    display: flex;
     background-color: white;
     padding: 20px;
     max-width: 700px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+p {
+    font-size: 28px;
+
 }
 article {
     margin-top: 10px;
@@ -50,6 +60,7 @@ footer {
     background-color: #8B4513;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 select, textarea {
@@ -80,4 +91,6 @@ button {
 .botao-mapa:hover {
     background-color: #45a049;
 }
+
+
 
