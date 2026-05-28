@@ -1,14 +1,17 @@
+/* Remove margens padrões */
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
+/* Corpo do site */
 body {
     font-family: 'Caveat', sans-serif;
-    margin: 0;
     background-color: black;
 }
 
+/* Cabeçalho */
 header {
     background-color: #910515;
     color: white;
@@ -16,81 +19,109 @@ header {
     padding: 20px;
 }
 
+/* Menu de navegação */
 nav {
     background-color: #a62413;
     padding: 10px;
     text-align: center;
 }
 
+/* Links do menu */
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
- 
+
+/* Efeito ao passar o mouse */
 nav a:hover {
-    text-decoration: underline;
     color:#e2240b;
-    margin: 18px;
+    text-decoration: underline;
 }
 
+/* MAIN usando FLEXBOX */
 main {
-    padding: 20px;
+
+    /* ativa o flexbox */
+    display:flex;
+
+    /* permite quebrar linha */
+    flex-wrap: wrap;
+
+    /* centraliza os cards */
+    justify-content:center;
+
+    /* espaço entre os cards */
+    gap:20px;
+
+    padding:20px;
 }
 
+/* Cards/sections */
 section {
-    display: flex;
+
     background-color: white;
-    padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    /* largura menor */
+    width: 350px;
+
+    /* altura mínima */
+    min-height: 600px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+    /* flex interno */
+    display:flex;
+
+    justify-content:center;
 }
 
+/* Container interno */
+.container {
+
+    display:flex;
+
+    /* imagem em cima */
+    flex-direction:column;
+
+    /* centraliza horizontalmente */
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+}
+
+/* Imagem */
+.container img {
+
+    width:100%;
+
+    max-width:280px;
+
+    height:auto;
+
+    border-radius:10px;
+}
+
+/* Parágrafos */
 p {
-    font-size: 28px;
+    font-size:28px;
+}
 
-}
-article {
-    margin-top: 10px;
-}
+/* Footer */
 footer {
-    background-color: #8B4513;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
 
-select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background-color: #0077b6;
+    background-color:#8B4513;
+
+    padding:20px;
+
+    text-align:center;
+
     color:white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
 }
-
-
-.botao-mapa {
-    background-color: #0077b6;
-    color: aliceblue;
-    padding: 12px 24px;
-    text-decoration:none;
-    border-radius:8px;
-    font-size: 16px;
-}
-.botao-mapa:hover {
-    background-color: #45a049;
-}
-
-
-
