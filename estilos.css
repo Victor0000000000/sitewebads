@@ -4,7 +4,13 @@
 }
 
 body {
-    font-family: 'Caveat', sans-serif;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background-color: black;
     margin: 0;
     background-color: black;
 }
