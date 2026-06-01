@@ -48,70 +48,54 @@ nav a:hover {
 /* MAIN usando FLEXBOX */
 main {
 
-    /* ativa o flexbox */
-    display:flex;
+   display: flex;
+    flex-wrap: wrap; /* permite quebrar linha */
+    justify-content: center; /* centraliza os cards */
+    gap: 20px; /* espaço entre eles */
 
-    /* permite quebrar linha */
-    flex-wrap: wrap;
-
-    /* centraliza os cards */
-    justify-content:center;
-
-    /* espaço entre os cards */
-    gap:20px;
-
-    padding:20px;
+    max-width: 1200px; /* largura máxima da área */
+    margin: 20px auto;
 }
 
 /* Cards/sections */
 section {
 
-    background-color: white;
+      background-color: white;
 
-    /* largura menor */
-    width: 350px;
+    /* 3 cards por linha */
+     flex: 1 1 380px;
+    max-width: 380px;
 
-    /* altura mínima */
-    min-height: 600px;
+    padding: 20px;
 
-    padding:20px;
+    border-radius: 10px;
 
-    border-radius:10px;
-
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-
-    /* flex interno */
-    display:flex;
-
-    justify-content:center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 /* Container interno */
 .container {
 
-    display:flex;
+        display: flex;
+    flex-direction: column;
 
-    /* imagem em cima */
-    flex-direction:column;
+    align-items: center;
 
-    /* centraliza horizontalmente */
-    align-items:center;
+    text-align: center;
 
-    text-align:center;
-
-    gap:50px;
+    gap: 15px;
 }
 
 /* Imagem */
 .container img {
 
-    width:100%;
+     width: 100%;
+    max-width: 300px;
+    height: 200px;
 
-    max-width:280px;
+    object-fit: cover;
 
-    height:auto;
-
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 /* Parágrafos */
@@ -129,4 +113,50 @@ footer {
     text-align:center;
 
     color:white;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Card da diária */
+.diaria{
+    background: linear-gradient(180deg, #ff9d00, #ff7b00);
+    color: white;
+
+    width: 100%;
+    max-width: 280px;
+
+    padding: 15px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Texto "DIÁRIA" */
+.texto-diaria{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.valor{
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.promocao{
+    background: white;
+    color: #ff7b00;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
 }
