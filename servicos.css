@@ -98,10 +98,7 @@ section {
     border-radius: 10px;
 }
 
-/* Parágrafos */
-p {
-    font-size:28px;
-}
+
 
 /* Footer */
 footer {
@@ -115,8 +112,12 @@ footer {
     color:white;
 }
 
+.bg-img p {
+    font-size: 28px;
+}
+
 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
