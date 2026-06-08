@@ -48,7 +48,6 @@ main {
 section {
     display: flex;
     justify-content: center;
-    /* aumenta bastante a largura */
     max-width: 1200px;
     width: 90%;
     background-color: white;
@@ -115,5 +114,20 @@ button {
     text-align: center;
 }
 
+button {
+    width: 100%;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+button:hover {
+    background-color: #ff7b00;
+}
 

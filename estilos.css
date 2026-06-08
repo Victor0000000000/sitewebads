@@ -1,102 +1,92 @@
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    background-color: black;
-    margin: 0;
-    background-color: black;
+body{
+    font-family:"Roboto", sans-serif;
+    font-weight:300;
+    background:black;
 }
 
-header {
-    background-color: #910515;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
-nav {
-    background-color: #a62413;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
- 
-nav a:hover {
-    text-decoration: underline;
-    color:#e2240b;
-    margin: 18px;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    display: flex;
-    background-color: white;
-    padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-p {
-    font-size: 28px;
-
-}
-article {
-    margin-top: 10px;
-}
-footer {
-    background-color: #8B4513;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background-color: #0077b6;
+header{
+    background:#910515;
     color:white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    text-align:center;
+    padding:20px;
+}
+
+header p{
+    font-size:28px;
 }
 
 
-.botao-mapa {
-    background-color: #0077b6;
-    color: aliceblue;
-    padding: 12px 24px;
+nav{
+    background:#a62413;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
     text-decoration:none;
-    border-radius:8px;
-    font-size: 16px;
-}
-.botao-mapa:hover {
-    background-color: #45a049;
+    font-weight:bold;
+    margin:0 15px;
 }
 
+nav a:hover{
+    color:#e2240b;
+    text-decoration:underline;
+}
 
 
+main{
+    padding:20px;
+}
+
+section{
+    background:white;
+    max-width:700px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+p{
+    font-size:20px;
+    line-height:1.6;
+}
+
+
+details{
+    margin-top:20px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+
+footer{
+    background:#8B4513;
+    text-align:center;
+    padding:20px;
+    color:white;
+}

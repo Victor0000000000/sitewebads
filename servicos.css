@@ -1,22 +1,18 @@
-/* Remove margens padrões */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Corpo do site */
 body {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     background-color: black;
 }
 
-/* Cabeçalho */
 header {
     background-color: #910515;
     color: white;
@@ -24,14 +20,17 @@ header {
     padding: 20px;
 }
 
-/* Menu de navegação */
+.bg-img p {
+    font-size: 28px;
+}
+
+
 nav {
     background-color: #a62413;
     padding: 10px;
     text-align: center;
 }
 
-/* Links do menu */
 nav a {
     color: white;
     margin: 0 15px;
@@ -39,90 +38,77 @@ nav a {
     font-weight: bold;
 }
 
-/* Efeito ao passar o mouse */
 nav a:hover {
-    color:#e2240b;
+    color: #e2240b;
     text-decoration: underline;
 }
 
-/* MAIN usando FLEXBOX */
+
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
-   display: flex;
-    flex-wrap: wrap; /* permite quebrar linha */
-    justify-content: center; /* centraliza os cards */
-    gap: 20px; /* espaço entre eles */
-
-    max-width: 1200px; /* largura máxima da área */
+    max-width: 1200px;
     margin: 20px auto;
 }
 
-/* Cards/sections */
 section {
+    background-color: white;
 
-      background-color: white;
-
-    /* 3 cards por linha */
-     flex: 1 1 380px;
+    flex: 1 1 380px;
     max-width: 380px;
 
     padding: 20px;
-
     border-radius: 10px;
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-/* Container interno */
+section:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(255, 123, 0, 0.4);
+}
+
+main:hover section {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+main section:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+
 .container {
-
-        display: flex;
+    display: flex;
     flex-direction: column;
-
     align-items: center;
-
     text-align: center;
-
     gap: 15px;
 }
 
-/* Imagem */
-.container img {
 
-     width: 100%;
+.container img {
+    width: 100%;
     max-width: 300px;
     height: 200px;
 
     object-fit: cover;
-
     border-radius: 10px;
 }
 
-
-
-/* Footer */
-footer {
-
-    background-color:#8B4513;
-
-    padding:20px;
-
-    text-align:center;
-
-    color:white;
-}
-
-.bg-img p {
-    font-size: 28px;
-}
 
 p {
     font-size: 20px;
     line-height: 1.6;
 }
 
-/* Card da diária */
-.diaria{
+
+.diaria {
     background: linear-gradient(180deg, #ff9d00, #ff7b00);
     color: white;
 
@@ -136,28 +122,43 @@ p {
     flex-direction: column;
     align-items: center;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Texto "DIÁRIA" */
-.texto-diaria{
+.promocao {
+    background: white;
+    color: #ff7b00;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 4px 8px;
+    border-radius: 6px;
+
+    margin-bottom: 8px;
+}
+
+.texto-diaria {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.valor{
+.valor {
     font-size: 38px;
     font-weight: bold;
     margin-top: 5px;
 }
 
-.promocao{
-    background: white;
-    color: #ff7b00;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 4px 8px;
-    border-radius: 6px;
-    margin-bottom: 8px;
+
+footer {
+    background-color: #8B4513;
+    color: white;
+
+    padding: 20px;
+    text-align: center;
+}
+
+footer i {
+    color: black;
 }
